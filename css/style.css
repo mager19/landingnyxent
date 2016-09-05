@@ -1,24 +1,4 @@
 
-
-/* ---------------------------------------------------------------------- */
-/*	Import styles
-/* ---------------------------------------------------------------------- */
-
-@import url("../css/normalize.css");
-
-/* bootstrap.css  - include resetes ( Media querys, grid-responsive,layout).*/
-@import url("../css/bootstrap/bootstrap.css");
-@import url("../css/bootstrap/bootstrap-theme.css");
-
-
-
-/* Owl Carousel */
-@import url("../css/owl.carousel.css");
-/* Font Awesome */
-@import url("../css/font-awesome.min.css");
-/* Animate and more*/
-
-
 body{
 	
 	line-height:30px;
@@ -233,10 +213,31 @@ nav ul li a:hover{
 .software__item{
 	border-right:1px solid #eee;
 	border-bottom: 1px solid #eee;
+	font-family: 'Lato';
 	text-align: center;
 	padding: 3em 2em;
+	min-height: 400px;
+	-webkit-transition: all linear 0.4s;
+			-moz-transition: all linear 0.4s;
+			-ms-transition: all linear 0.4s;
+			-o-transition: all linear 0.4s;
+			transition: all linear 0.4s;	
+
 }
 
+.software__item:hover{
+	background-color: #20ace3;
+	cursor: pointer;
+	color:#fff;
+}
+
+.software__item:hover h2, .software__item:hover p{
+	color: #f9f9f9;
+}
+
+.software__item img{
+	width: 30%;
+}
 
 .software__item:nth-child(2), .software__item:nth-child(4){
 	border-right: 0px;
@@ -245,4 +246,48 @@ nav ul li a:hover{
 .software__item:nth-child(3), .software__item:nth-child(4){
 
 	border-bottom: 0px;
+}
+
+.software__item h2{
+	color:#20ace3;
+	font-size: 1.5em;
+	font-family: 'Lato';
+	margin: 0.8em 0;
+}
+
+.software__item p{
+	color:#232323;
+	font-family: 'Lato';
+	line-height: 1.2em;
+}
+
+/*barra*/
+
+#barra{
+	background-color: #232323;	
+	color:#f9f9f9;
+	padding: 3em 0;
+}
+
+
+.barra__item{
+	font-family: 'lato';
+	text-align: center;
+}
+
+.barra__item i{
+	color:#f9f9f9;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.barra__item h3{
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+.barra__item span{
+	color:#f9f9f9;
+	font-size:4em;
 }
