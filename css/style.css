@@ -291,3 +291,53 @@ nav ul li a:hover{
 	color:#f9f9f9;
 	font-size:4em;
 }
+
+
+/*marketing*/
+
+#marketing{
+	background-color: #f9f9f9;
+	font-family: 'lato';
+}
+
+.marketing__item{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+	padding: 2em;
+	margin-bottom: 1.5em;
+	height: 380px;
+		-webkit-transition: all linear 0.4s;
+			-moz-transition: all linear 0.4s;
+			-ms-transition: all linear 0.4s;
+			-o-transition: all linear 0.4s;
+			transition: all linear 0.4s;
+}
+
+.marketing__item:hover{
+	background-color: #20ace3;
+	cursor: pointer;
+	color:#fff;
+}
+
+.marketing__item:hover h3, .marketing__item:hover p{
+	color: #f9f9f9;
+}
+
+.marketing__item h3{
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.marketing__item p{
+	
+	line-height: 1.2em;
+	margin-top: 1em;
+	
+}
+
+.marketing__item img{
+	width: 40%;
+	margin-left:30%; 
+}
