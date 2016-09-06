@@ -143,7 +143,7 @@ nav ul li a:hover{
 #slide{
 	background-image: url("../img/slide1.jpg");
 	font-family: 'Lato';
-	height: 50vh;
+	height: 30em;
 }
 
 .slide__info{
@@ -227,6 +227,7 @@ nav ul li a:hover{
 
 .software__item:hover{
 	background-color: #20ace3;
+	border-radius: 5px;
 	cursor: pointer;
 	color:#fff;
 }
@@ -340,4 +341,51 @@ nav ul li a:hover{
 .marketing__item img{
 	width: 40%;
 	margin-left:30%; 
+}
+
+
+/* About */
+
+#about{
+
+	font-family: 'Lato';
+}
+
+#about img{
+	border-radius: 5px;
+	    height: 30em;
+}
+
+#about h3{
+	font-size: 1.6em;
+	text-align: center;
+}
+
+#about h4{
+	color:#20ace3;
+	font-size: 1.4em;
+	margin: 1em 0;
+}
+
+#about ul li{
+	color:#4d4d4d;
+	margin-left: 0.5em;
+	line-height: 1.5em;
+
+	margin-top: 1em;
+}
+
+#about ul li i{
+	color:#20ace3;
+	margin-right: 0.5em;
+}
+
+#about p{
+
+	line-height: 1.2em;
+	margin-top: 1em;
+}
+
+.about__right{
+	padding: 0 2em;
 }
