@@ -27,6 +27,7 @@ p{
 }
 h1 {color:#4d4d4d;
 	font-size:2em;
+	font-family: myriad;
 	font-weight: 700;
 	line-height: 1em;
 	text-transform: uppercase;
@@ -74,22 +75,26 @@ img{
 }
 
 
-
+@font-face {
+    font-family: myriad;
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
 
 
 /*Header*/
 
 #header{
 	
-	padding: 1em 0;
+	padding: 0 0;
 }
 
 #header h1{
 
 	font-size: 2.5em;
-	font-family: 'Lato';
+ 	font-family: myriad;
+ 	margin-top: 0.5em;
+ 	margin-left: -0.7em;
 	text-transform: none;
-	margin-top: -0.5em;
 }
 
 #header h1 span{
@@ -97,15 +102,16 @@ img{
 	color:#0087d2;
 }
 
-#header img{
-	margin-top: -0.5em;
-}
 
 nav{
 
-	margin-top: 2em!important;
+	padding-top:1.5em!important;
 }
 
+.navbar-nav > li > a {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
 
 nav ul li{
 	
@@ -114,6 +120,7 @@ nav ul li{
 	list-style: none;
 	padding: 0.3em 0.5em;
 	margin-right: 0.3em;
+
 }
 
 nav ul li a{
@@ -123,18 +130,18 @@ nav ul li a{
 	font-family: 'Lato';
 	font-weight: 600;
 	text-decoration: none;
+		-webkit-transition: all linear 0.2s;
+	-moz-transition: all linear 0.2s;
+	-ms-transition: all linear 0.2s;
+	-o-transition: all linear 0.2s;
+	transition: all linear 0.2s;
 }
 
-nav ul li:hover{
-
-	border-bottom: 2px solid #20ACE3;
-	
-}
 
 nav ul li a:hover{
 
 	background-color: transparent!important;
-	color:#20ACE3;
+	color:#E8594F;
 	text-decoration: none!important;
 }
 
@@ -192,9 +199,9 @@ nav ul li a:hover{
 
 .button a:hover{
 
-	background-color: #fff;
-	box-shadow: 0px 4px 0px 0 #fff;
-	color:#0087d2;
+	background-color: #E8594F;
+	box-shadow: 0px 4px 0px 0 #E8594F;
+	color:#fff;
 	text-decoration: none;
 }
 
@@ -209,14 +216,21 @@ nav ul li a:hover{
 	text-align: center;
 }
 
+#software{
+	background-color: #f9f9f9;
+}
 
 .software__item{
-	border-right:1px solid #eee;
-	border-bottom: 1px solid #eee;
+/*	border-right:1px solid #eee;
+	border-bottom: 1px solid #eee;*/
+		background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
 	font-family: 'Lato';
 	text-align: center;
 	padding: 3em 2em;
 	min-height: 400px;
+	margin-bottom: 1.5em;
 	-webkit-transition: all linear 0.4s;
 			-moz-transition: all linear 0.4s;
 			-ms-transition: all linear 0.4s;
@@ -347,28 +361,32 @@ nav ul li a:hover{
 /* About */
 
 #about{
-
+	background-color: #20ace3;
 	font-family: 'Lato';
 }
 
 #about img{
 	border-radius: 5px;
-	    height: 30em;
+	margin-top: 3em;
+}
+
+#about h2{
+	color: #f9f9f9;
 }
 
 #about h3{
+	color:#f9f9f9;
 	font-size: 1.6em;
-	text-align: center;
 }
 
 #about h4{
-	color:#20ace3;
+	color:#f9f9f9;
 	font-size: 1.4em;
 	margin: 1em 0;
 }
 
 #about ul li{
-	color:#4d4d4d;
+	color:#f9f9f9;
 	margin-left: 0.5em;
 	line-height: 1.5em;
 
@@ -376,12 +394,12 @@ nav ul li a:hover{
 }
 
 #about ul li i{
-	color:#20ace3;
+	color:#f9f9f9;
 	margin-right: 0.5em;
 }
 
 #about p{
-
+	color:#f9f9f9;
 	line-height: 1.2em;
 	margin-top: 1em;
 }
