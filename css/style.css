@@ -524,3 +524,181 @@ nav ul li a:hover{
 	color:#20ACE3;
 	margin-right: 10px;
 }
+
+.slick-dots li button::before {
+    font-family: slick;
+    font-size: 50px!important;
+  
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 20px;
+}
+
+.tipo__item img{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 0.3em;
+	
+}
+
+
+.portafolio__item__right{
+	padding: 3em 1.5em 0 1.5em;
+}
+
+
+/*Contact*/
+
+#contact{
+		background-image: url("../img/pw_maze_white.png");
+	font-family: 'Lato';
+}
+
+
+#contact h3{
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+
+.contact__item{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.contact__item p{
+	color:#232323;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.contact__item i{
+	color:#20ACE3;
+	font-size: 2em;
+	margin: 1em 0;
+}
+
+#contact form{
+
+	margin-top: 3em;
+}
+
+
+#contact form input{
+	border-radius: 2px;
+	border:2px solid #ccc;
+	float: left;
+	padding:0.7em 2em;
+	margin-top: 1.5em;
+	width: 48%;
+
+}
+
+#contact form input:first-child{
+	margin-right: 4%;
+}
+
+
+
+.full-w{
+	width: 100%!important;
+	margin-top: 1em;
+}
+
+#contact form textarea{
+	border-radius: 2px;
+	border:2px solid #ccc;
+	padding:0.7em 2em;
+	margin-top: 1.5em;
+}
+
+#contact form input[type="submit"]{
+	background-color:#20ACE3;
+	border:0px;
+	color:#f9f9f9;
+	border-radius: 2px;
+	padding: 0.7em 1.5em;
+	width: 24%;
+	margin-left: 38%;
+	-webkit-transition: all linear 0.4s;
+	-moz-transition: all linear 0.4s;
+	-o-transition: all linear 0.4s;
+	-ms-transition: all linear 0.4s;
+	transition: all linear 0.4s;
+}
+
+#contact form input[type="submit"]:hover{
+	background-color:#C1272D;	
+}
+
+
+
+/*Footer*/
+
+
+footer{
+	font-family: 'Lato';
+	padding: 2em 0;
+}
+
+
+footer h1{
+
+	font-size: 2.5em;
+	text-transform: none;
+	margin-top: -0.5em;
+}
+
+footer h1 span{
+
+	color:#0087d2;
+}
+
+
+#info ul{
+
+	margin-left: -2.5em;
+}
+
+#info ul li{
+
+	color:#c0c0c0;
+	list-style: none;
+}
+
+#info ul li span{
+
+	font-weight: 700;
+}
+
+
+/*Item-footer*/
+
+.item-footer{
+
+	margin-top: 2.5em;
+	text-align: center;
+}
+
+.item-footer h3{
+
+	font-weight: 800;
+}
+
+.item-footer ul li{
+
+	color:#c0c0c0;
+	list-style: none;
+}
+
