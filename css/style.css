@@ -407,3 +407,120 @@ nav ul li a:hover{
 .about__right{
 	padding: 0 2em;
 }
+
+
+/*How*/
+
+#how{
+	background-image: url("../img/how.jpg");
+	background-position: top;
+	font-family: 'Lato';
+}
+
+
+#how h2{
+	color:#fff;
+}
+
+
+.how__item{
+	border-radius: 3px;
+	text-align: center;
+	
+}
+
+
+
+.how__item__head h3{
+	color:#f9f9f9;
+	font-size: 2em;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.how__item__head i{
+	color:#20ace3;
+	font-size: 3em;
+	text-align: center;
+}
+
+.how__item__head p{
+	color: #ccc;
+	font-size: 1.2em;
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+
+
+.how__item:after{
+	color:#f9f9f9;
+	content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    font-size: 5em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 20%;
+    left: 100%;
+}
+
+#how__item__final:after{
+	content: " ";
+}
+
+
+/*portafolio*/
+.portafolio__item{
+	font-family: 'Lato';
+}
+
+.portafolio__item h3{
+	border-bottom: 2px solid #20ace3;
+	color:#20ace3;
+	font-size: 1.2em;
+	font-weight:700;
+	padding-bottom: 5px;
+	width: 30%;
+}
+
+.portafolio__item h2{
+	color:#E8594F;
+	font-size: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.portafolio__item h4{
+	color:#20ace3;
+	font-weight: 500;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.portafolio__item p{
+	color:#232323;
+	line-height: 1.4em;
+	margin-left: 0.5em;
+	width: 80%;
+}
+
+.portafolio__item ul{
+	margin-left: 0.5em;
+}
+
+.portafolio__item ul li{
+	margin-bottom: 1em;
+
+}
+
+.portafolio__item ul li i{
+	color:#20ACE3;
+	margin-right: 10px;
+}
