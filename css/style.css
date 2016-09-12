@@ -148,27 +148,52 @@ nav ul li a:hover{
 
 /*Slide*/
 #slide{
-	background-image: url("../img/slide1.jpg");
+	/*background-image: url("../img/slide1.jpg");*/
 	font-family: 'Lato';
-	height: 30em;
+	/*height: 30em;*/
+}
+
+
+
+#video_overlays {
+position:absolute;
+float:left;
+    width:100%;
+
+   
+    z-index:300000;
+}
+
+#video_overlays p{
+	color:#f9f9f9;
+}
+
+.videoq video{
+	 width: 100%;
+}
+
+#video video{
+width: 100%;
+	
 }
 
 .slide__info{
-	position: absolute;
-	top:20%;
+	font-family: 'Lato';
+	margin-top: 8em;
+
 }
 
 
-#slide h2{
+.slide__info h2{
 	color: #f9f9f9;
 	font-size: 3em;
 	font-family: lato;
 	font-weight: 600;
 	line-height: 1.1em;
-	padding-top: 1em;
+	
 }
 
-#slide p{
+.slide__info p{
 
 	color: #f9f9f9;
 	font-size: 18px;
@@ -702,3 +727,17 @@ footer h1 span{
 	list-style: none;
 }
 
+
+
+
+/* responsive */
+
+
+@media screen and (max-width:1366px) {
+
+	.slide__info{
+		font-family: 'Lato';
+		margin-top: 3.5em;
+
+	}
+}

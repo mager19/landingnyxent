@@ -70,10 +70,9 @@
 	</div>
 </header>
 <!-- End Header -->
-
-<!-- Section -->
-<section class="contenedor" id="slide">
-	<div class="container">
+<div id="video_box">
+  <div id="video_overlays">
+  		<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="slide__info">
@@ -86,8 +85,15 @@
 			</div>
 		</div>
 	</div>
-</section>
-<!-- End Section -->
+  </div>
+  <div class="videoq">
+    <video  autoplay>
+	  <source src="img/dev2-3.mp4" type="video/mp4">
+	 <source src="img/dev2-3.ogv" type="video/ogg">
+	  <source src="img/dev2-3.ogg" type="video/ogg">
+  </div>
+</div>
+
 
 <!-- Section -->
 <section class="contenedor" id="software">
@@ -118,7 +124,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="software__item">
+					<div class="software__item software__item__animation">
 						<img src="img/browser.svg" alt="App development">
 						<h2>Web Site Development</h2>
 						<p>We are a high tech software development company, able to work with start-up or established businesses. With many projects already under our belt, we can provide you with the guidelines and share our expertise with your company.</p>
@@ -126,7 +132,7 @@
 				</div>
 
 				<div class="col-md-6 ">
-					<div class="software__item">
+					<div class="software__item software__item__animation">
 						<img src="img/diagram.svg" alt="App development">
 						<h2>Maintenance and Support</h2>
 						<p>Whether it is our project or not, we can always assist you at any step of the way. We always love a good challenge.</p>
@@ -323,7 +329,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="how__item">
+				<div class="how__item" id="how__item--one">
 					<div class="col-md-12 how__item__head">
 						<i class="fa fa-envelope-o" aria-hidden="true"></i>
 						<h3>Contact Us</h3>
@@ -334,7 +340,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="how__item">
+				<div class="how__item" id="how__item--two">
 					<div class="col-md-12 how__item__head">
 						<i class="fa fa-area-chart" aria-hidden="true"></i>
 						<h3>Study</h3>
@@ -345,7 +351,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="how__item">
+				<div class="how__item" id="how__item--three">
 					<div class="col-md-12 how__item__head">
 						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 						<h3>Proposal</h3>
@@ -356,7 +362,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="how__item" id="how__item__final">
+				<div class="how__item how__item--four" id="how__item__final ">
 					<div class="col-md-12 how__item__head">
 						<i class="fa fa-cogs" aria-hidden="true"></i>
 						<h3>Start</h3>
@@ -506,19 +512,19 @@
 				</h3>
 			</div>
 			<div class="col-md-4">
-				<div class="contact__item">
+				<div class="contact__item" id="contact__item--one">
 					<i class="fa fa-check" aria-hidden="true"></i><p>It is 100% free, and you are not committed to us so far.</p>
 				</div>
 			</div>
 
 			<div class="col-md-4">
-				<div class="contact__item">
+				<div class="contact__item" id="contact__item--two">
 					<i class="fa fa-check" aria-hidden="true"></i><p>It is Reliabe, we never share your contact details with anyone.</p>
 				</div>
 			</div>
 
 			<div class="col-md-4">
-				<div class="contact__item">
+				<div class="contact__item" id="contact__item--three">
 					<i class="fa fa-check" aria-hidden="true"></i><br><p>It is quick, we will contact you short.</p>
 				</div>
 			</div>
@@ -544,6 +550,7 @@
 <script src="js/waypoints.min.js"></script> 
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
 
 <script>
 	$(document).ready(function(){
@@ -553,7 +560,18 @@
 		  	autoplaySpeed: 5000,
 		  	dots: true,
 		  });
-	});
+
+		  window.sr = ScrollReveal();
+			sr.reveal('.software__item__animation, .marketing__item, .about__right', { duration: 500, delay: 500, });
+			sr.reveal('#how__item--one', { duration: 1000, delay: 800, });
+			sr.reveal('#how__item--two', { duration: 1000, delay: 2300, });
+			sr.reveal('#how__item--three', { duration: 1000, delay: 3800, });
+			sr.reveal('.how__item--four', { duration: 1000, delay: 5200, });
+			sr.reveal('#contact__item--one', { duration: 1000, delay: 500,scale: 2.2 });
+			sr.reveal('#contact__item--two', { duration: 1000, delay: 1000,scale: 2.2 });
+			sr.reveal('#contact__item--three', { duration: 1000, delay: 1500, scale: 2.2 });
+
+		  });
 		
 </script>
 
