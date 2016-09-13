@@ -146,6 +146,10 @@ nav ul li a:hover{
 }
 
 
+.nav-collapse{
+	display: none!important;
+}
+
 /*Slide*/
 #slide{
 	/*background-image: url("../img/slide1.jpg");*/
@@ -493,9 +497,10 @@ width: 100%;
     left: 100%;
 }
 
-#how__item__final:after{
-	content: " ";
-}
+	
+.how__item--four:after{
+		content: " "!important;
+	}
 
 
 /*portafolio*/
@@ -740,4 +745,155 @@ footer h1 span{
 		margin-top: 3.5em;
 
 	}
+}
+
+@media screen and (max-width:1024px) {
+
+	.slide__info{
+		text-align: center;
+	}
+	.slide__info h2 {
+	    color: #f9f9f9;
+	    font-size: 2em
+
+	}
+
+	.slide__info p {
+	    color: #f9f9f9;
+	    font-size: 16px;
+	    line-height: 1.3em;
+	    margin: 1em 0 1.5em 0;
+	    margin-left: 10%;
+	    width: 80%;
+	}
+
+	.software__item p {
+    	font-size: 0.9em;
+	}
+
+	.software__item {
+	    min-height: 350px;
+	}
+
+	.marketing__item p {
+        font-size: 0.9em;
+	}
+	
+	#header{
+		text-align: center;
+	}
+	
+	nav ul li {
+       	padding: 0.3em 0.2em;
+        margin-top: -0.3em;
+	}
+
+	.marketing__item img {
+    	width: 30%;
+    	margin-left: 35%;
+	}
+
+}
+
+@media screen and (max-width:768px) {
+	#header img{
+		text-align: center;
+	}
+
+	nav ul li{
+		display: inline-block!important;
+		padding: 0.3em 0.2em;
+    	margin-right: 0.1em;
+	}
+
+	.nav > li > a {
+    	padding: 10px 3px;
+	}
+
+	.slide__info p{
+		display: none;
+	}
+
+	.slide__info h2 {
+        font-size: 2em;
+    	margin-top: -0.5em;
+    	margin-bottom: 1em;
+	}
+
+	.how__item__head h3 {
+        font-size: 1.5em;
+	}
+	
+	.how__item--four:after{
+		content: " "!important;
+	}
+
+	.how__item__head p{
+		font-size: 1em;
+	}
+
+
+}
+
+
+@media screen and (max-width:480px) {
+	
+	.nav-toggle{
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    width: 70px;
+    height: 55px;
+    float: right;
+    margin: -1em -2em 1em 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    color:blue;    background: #444 url("../img/hamburger.gif") no-repeat 50% 33%;
+
+	}
+
+	.nav-collapse ul{
+	
+		margin-top: 2em!important;
+	}
+
+	.opened {
+    	min-height: 200px!important;
+
+	}
+	.nav-collapse{
+		display: block;
+	}
+	.navbar-nav{
+		display: none!important;
+	}
+
+	#video_box{
+		display: none;
+	}
+
+	.barra__item i {
+      	font-size: 1.5em;
+    }
+
+    .barra__item span {
+        font-size: 2.2em;
+	}
+
+	.barra__item h3 {
+    	font-size: 1em;    
+	}
+
+	#about ul li {
+        font-size: 1.2em;
+	}
+
+	#contact h3 {
+    	font-size: 1.5em;
+    }
+
 }
